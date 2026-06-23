@@ -1,0 +1,62 @@
+EXERCISE 1: INVENTORY MANAGEMENT SYSTEM
+
+1. Understanding the Problem
+
+Data Structures and Algorithms are essential for handling large inventories efficiently. In a warehouse with thousands of products, operations such as adding, updating, searching, and deleting products must be performed quickly. Choosing the right data structure improves performance and reduces processing time.
+
+Suitable Data Structure:
+HashMap<Integer, Product>
+
+A HashMap stores products using productId as the key and the Product object as the value. It provides fast insertion, retrieval, updating, and deletion operations.
+
+Advantages:
+• Fast insertion
+• Fast searching
+• Fast updating
+• Fast deletion
+
+2. Implementation
+
+Product Class:
+Stores product details such as:
+• productId
+• productName
+• quantity
+• price
+
+Inventory Management:
+A HashMap is used to store products.
+
+Operations:
+• Add Product
+• Update Product
+• Delete Product
+• Display Products
+
+3. Time Complexity Analysis
+
+Add Product:
+Method Used: put()
+Time Complexity: O(1)
+
+Search Product:
+Method Used: get()
+Time Complexity: O(1)
+
+Update Product:
+Method Used: get()
+Time Complexity: O(1)
+
+Delete Product:
+Method Used: remove()
+Time Complexity: O(1)
+
+4. Optimization
+
+• Use HashMap instead of ArrayList for direct access using product IDs.
+• Use unique productId as the key.
+• Avoid linear searching through all products.
+• For very large inventories, use database indexing.
+
+Conclusion:
+Using HashMap makes inventory operations efficient because products can be accessed directly through their product IDs. This reduces search time and improves overall system performance.

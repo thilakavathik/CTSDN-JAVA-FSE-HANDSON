@@ -1,0 +1,77 @@
+EXERCISE 3: SORTING CUSTOMER ORDERS
+
+1. Understanding Sorting Algorithms
+
+Sorting is the process of arranging data in a specific order. In an e-commerce platform, sorting customer orders by total price helps prioritize high-value orders.
+
+Common Sorting Algorithms:
+
+1. Bubble Sort
+   - Compares adjacent elements and swaps them if they are in the wrong order.
+   - Repeats until the array is sorted.
+   - Simple but inefficient for large datasets.
+
+2. Insertion Sort
+   - Builds a sorted portion of the array one element at a time.
+   - Efficient for small datasets.
+
+3. Quick Sort
+   - Selects a pivot element and partitions the array into smaller and larger elements.
+   - Recursively sorts the partitions.
+   - Very efficient for large datasets.
+
+4. Merge Sort
+   - Divides the array into halves, sorts them, and merges them.
+   - Provides consistent performance.
+
+2. Implementation
+
+Order Class:
+Stores:
+• orderId
+• customerName
+• totalPrice
+
+Bubble Sort:
+Compares adjacent orders and swaps them based on totalPrice.
+
+Quick Sort:
+Uses divide-and-conquer strategy by selecting a pivot and recursively sorting partitions.
+
+3. Time Complexity Analysis
+
+Bubble Sort:
+Best Case: O(n)
+Average Case: O(n²)
+Worst Case: O(n²)
+
+Quick Sort:
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n²)
+
+4. Comparison
+
+Bubble Sort:
+Advantages:
+• Easy to understand and implement.
+
+Disadvantages:
+• Slow for large datasets.
+• Requires many comparisons and swaps.
+
+Quick Sort:
+Advantages:
+• Faster for large datasets.
+• Efficient average-case performance.
+
+Disadvantages:
+• Worst-case complexity can be O(n²).
+
+5. Why Quick Sort is Preferred
+
+Quick Sort is generally preferred because its average time complexity is O(n log n), making it much faster than Bubble Sort's O(n²) for large datasets. E-commerce platforms often process thousands of orders, so Quick Sort provides better performance and scalability.
+
+Conclusion:
+
+Bubble Sort is suitable for learning and small datasets, while Quick Sort is the preferred choice for large-scale applications due to its superior efficiency.

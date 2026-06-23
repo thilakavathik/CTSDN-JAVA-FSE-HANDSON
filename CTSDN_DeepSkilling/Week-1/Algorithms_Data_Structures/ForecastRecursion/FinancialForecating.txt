@@ -1,0 +1,65 @@
+EXERCISE 7: FINANCIAL FORECASTING
+
+1. Understanding Recursive Algorithms
+
+Recursion is a programming technique where a method calls itself to solve a problem. A recursive solution typically consists of:
+
+• Base Case – The condition that stops the recursion.
+• Recursive Case – The part where the method calls itself with a smaller problem.
+
+Recursion simplifies problems that can be broken down into smaller subproblems. Examples include factorial calculation, Fibonacci series, and tree traversal.
+
+2. Financial Forecasting
+
+Financial forecasting predicts future values based on current values and growth rates.
+
+Formula:
+
+Future Value = Present Value × (1 + Growth Rate)^Years
+
+Using recursion, the future value for a given year can be calculated from the previous year's value.
+
+3. Implementation
+
+Inputs:
+• Present Value
+• Growth Rate
+• Number of Years
+
+Recursive Logic:
+
+If years = 0:
+    Return present value
+
+Otherwise:
+    Return forecast(value × (1 + growthRate), growthRate, years - 1)
+
+4. Time Complexity Analysis
+
+Recursive Algorithm:
+
+Time Complexity: O(n)
+
+where n is the number of years.
+
+Reason:
+The recursive method makes one recursive call for each year.
+
+Space Complexity: O(n)
+
+because each recursive call is stored on the call stack.
+
+5. Optimization
+
+Problems with Recursion:
+• Large values of n can cause Stack Overflow.
+• Additional memory is used for recursive calls.
+
+Optimization Techniques:
+• Use iteration instead of recursion.
+• Use memoization when recursive calculations repeat.
+• Use mathematical formulas when applicable.
+
+Conclusion:
+
+Recursion provides a simple and elegant way to perform financial forecasting. However, for very large datasets, iterative approaches are usually more efficient because they use less memory.
