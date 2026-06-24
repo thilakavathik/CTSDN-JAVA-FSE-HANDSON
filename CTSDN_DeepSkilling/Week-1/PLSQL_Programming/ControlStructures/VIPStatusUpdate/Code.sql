@@ -1,0 +1,19 @@
+DECLARE
+BEGIN
+    FOR cust IN (
+        SELECT * FROM CUSTOMERS
+    ) LOOP
+
+    IF cust.BALANCE > 10000 THEN
+    UPDATE CUSTOMERS
+    SET ISVIP = 'TRUE'
+    WHERE CUSTOMERID = cust.CUSTOMERID;
+
+    END IF;
+
+    END LOOP;
+
+    COMMIT;
+
+END;
+/
